@@ -13,9 +13,8 @@ public class FeedbackEventListener {
     @KafkaListener(topics = "feedback-submitted", groupId = "feedback-analytics-consumer")
     public void onMessage(FeedbackResponseDTO event) {
 //        try {
-//            FeedbackResponseDTO event = objectMapper.readValue(message, FeedbackResponseDTO.class);
             System.out.printf(
-                    "Received feedback: id=%s | rating=%d | provider=%s | member=%s%n",
+                    "Received feedback: id=%s | rating= %d | provider= %s | member= %s%n",
                     event.getId(), event.getRating(), event.getProviderName(), event.getMemberId()
             );
 //        } catch (Exception e) {

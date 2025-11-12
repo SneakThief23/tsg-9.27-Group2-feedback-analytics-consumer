@@ -20,18 +20,17 @@ services:
     volumes:
       - kafka_data:/bitnami/kafka
 
-  postgres:
-    image: postgres:latest
-    container_name: postgres
-    environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: secret
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
 volumes:
   kafka_data:
-  postgres_data:
+
+
+# docker-compose.consumer.yml
+
+
+#services:
+#  consumer:
+#    image: confluentinc/confluent-local:latest
+#    environment:
+#      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+#    ports:
+#      - "8081:8081"
