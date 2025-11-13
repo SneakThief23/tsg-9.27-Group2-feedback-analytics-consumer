@@ -9,6 +9,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Setter
 @Getter
+@ToString
 public class FeedbackResponseDTO {
     private UUID id;
     private String memberId;
