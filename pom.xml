@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.Group2</groupId>
-	<artifactId>feedback-analytics-consumer</artifactId>
+	<artifactId>27-Group2-feedback-analytics-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>feedback-analytics-consumer</name>
 	<description>TSG 9.27 Feedback Analytics Consumer</description>
