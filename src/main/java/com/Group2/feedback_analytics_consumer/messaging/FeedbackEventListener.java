@@ -18,7 +18,7 @@ public class FeedbackEventListener {
         String result = event.toString();
         try {
             System.out.printf(
-                    "Received feedback: id=%s | rating= %d | provider= %s | member= %s%n | comment= %s%n",
+                    "Received feedback: id: %s | rating: %d | provider: %s | member: %s%n | comment: %s%n",
                     event.getId(), event.getRating(), event.getProviderName(), event.getMemberId(), event.getComment()
             );
         } catch (Exception e) {
